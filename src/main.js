@@ -1,10 +1,14 @@
-import { createApp } from "vue";
-import "./style.css";
+import {
+	createSSRApp
+} from "vue";
+// 引入 uView UI
+import uView from '@/uni_modules//vk-uview-ui';
 import App from "./App.vue";
-import Antd from "ant-design-vue";
-import router from "./router/index.js";
-
-const app = createApp(App);
-app.use(Antd);
-app.use(router);
-app.mount("#app");
+export function createApp() {
+	const app = createSSRApp(App);
+  console.log('uView', uView)
+  app.use(uView)
+	return {
+		app,
+	};
+}

@@ -1,23 +1,17 @@
-<template>
-  <a-config-provider :locale="zhCN">
-    <router-view />
-  </a-config-provider>
-</template>
-
 <script>
-import zhCN from 'ant-design-vue/es/locale/zh_CN';
 export default {
-  name: 'App',
-  components: {
-    
+  onLaunch: function () {
+    console.log('App Launch')
   },
-  data(){
-    return {
-      zhCN,
-    }
-  }
+  onShow: function () {
+    console.log('App Show')
+  },
+  onHide: function () {
+    console.log('App Hide')
+  },
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+@import "@/uni_modules/vk-uview-ui/index.scss";
 </style>
