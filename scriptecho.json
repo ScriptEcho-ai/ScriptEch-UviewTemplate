@@ -1,0 +1,10 @@
+{
+  "host": "https://admin.scriptecho.cn", // 访问地址
+  "framework": "uniapp",
+  "routeFile": "src/pages.json", // 路由文件
+  "codeDir": "src/pages", // 代码目录
+  "projectId": "7f5e22b8301882bf2df1c2c2bd30b397", // 项目ID，必填
+  "subPackage": "pagesA", // 分包名称，不填默认为主包
+  "port": "3700", // 端口，不填默认为5173
+  "routerMode": "hash" // 路由模式（hash，history），参考src/manifest.json中的h5.router.mode，默认为hash
+}
